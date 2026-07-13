@@ -5,21 +5,21 @@
 class Ccview < Formula
   desc "Compact console monitor for Claude usage limits"
   homepage "https://github.com/merlindeep/claude-cost-viewer"
-  version "0.2.0"
+  version "0.3.0"
   license "0BSD"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/merlindeep/claude-cost-viewer/releases/download/v0.2.0/ccview_0.2.0_darwin_amd64.tar.gz"
-      sha256 "230d0e8d501cc49698ab4e510c4e26f54ba3a0e1f65735a1830969a174cb7372"
+      url "https://github.com/merlindeep/claude-cost-viewer/releases/download/v0.3.0/ccview_0.3.0_darwin_amd64.tar.gz"
+      sha256 "e32d3fae7e50b6313e0ab924cd9c6e181c8648cb495db59a9e6c0b129d34e83e"
 
       define_method(:install) do
         bin.install "ccview"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/merlindeep/claude-cost-viewer/releases/download/v0.2.0/ccview_0.2.0_darwin_arm64.tar.gz"
-      sha256 "7b929afb9e4c1abbaadbf022da0014c37092a85057bc96998c68bd207928aa57"
+      url "https://github.com/merlindeep/claude-cost-viewer/releases/download/v0.3.0/ccview_0.3.0_darwin_arm64.tar.gz"
+      sha256 "ea3eaa666adcf263f2dc3d3a139645d097e3d905e1aff7eef23ff6bf247edc7a"
 
       define_method(:install) do
         bin.install "ccview"
@@ -29,15 +29,15 @@ class Ccview < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/merlindeep/claude-cost-viewer/releases/download/v0.2.0/ccview_0.2.0_linux_amd64.tar.gz"
-      sha256 "5260dfbe8b346969e145cfdd7912227ebafc69ce144968c670b66b74a55cdf9a"
+      url "https://github.com/merlindeep/claude-cost-viewer/releases/download/v0.3.0/ccview_0.3.0_linux_amd64.tar.gz"
+      sha256 "ad867de23bcf60d6376a78c91299f09b41bcba68861523f1b0efd2d932e3288d"
       define_method(:install) do
         bin.install "ccview"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/merlindeep/claude-cost-viewer/releases/download/v0.2.0/ccview_0.2.0_linux_arm64.tar.gz"
-      sha256 "da667d1f34e539f77a989f2b1e2bcaee5886c6c243fe0ec9d0ef3ee324b6c391"
+      url "https://github.com/merlindeep/claude-cost-viewer/releases/download/v0.3.0/ccview_0.3.0_linux_arm64.tar.gz"
+      sha256 "4381259a2c9c70b5857b5e7724307215e8980dbc707c112b4abf8c921b695dc1"
       define_method(:install) do
         bin.install "ccview"
       end
